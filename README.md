@@ -53,7 +53,7 @@ var makeChuckNorris = function() {
   var chuck = Object.create(chuckMethods); 
   chuck.age = 73; 
   chuck.strength = 200;  
-};   
+}; 
 var chuckMethods = {}; 
 chuckMethods.goTanning = function() { 
   this.age--; 
@@ -87,7 +87,7 @@ var ChuckNorris = function() {
   this.age = 73;
   this.strength = 200;
   //return this
-};   
+}; 
 ChuckNorris.prototype.goTanning = function() {
   this.age--;
 };
