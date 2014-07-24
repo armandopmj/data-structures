@@ -18,10 +18,11 @@ queueMethods.enqueue = function(value){
   this.last++;
 }
 queueMethods.dequeue = function(){
+  var value = this.storage[ this.first ];
   if( this.size() > 0 ){
     this.first++;
   }
-  return this.storage[ this.first ];
+  return value;
 }
 queueMethods.size = function(){
   return this.last - this.first;
