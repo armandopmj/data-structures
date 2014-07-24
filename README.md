@@ -12,18 +12,19 @@ As I delve deeper into JavaScript, I find many language quirks that might puzzle
 In order to to uphold some reasonable consistency, all four examples will revolve around instantiating Chuck Norris objects.  
 
 ###Functional instantiation
-var makeChuckNorris = function() {   
-  var chuck = {};   
-  chuck.age = 73;   
-  chuck.strength = 200;   
-  chuck.goTanning = function() {     
-    this.age--;   
-  };   
-  chuck.useTotalGym = function() {     
-    this.strength++;   
-  };   
+var makeChuckNorris = function() {
+  var chuck = {};
+  chuck.age = 73;  
+  chuck.strength = 200;  
+  chuck.goTanning = function() {  
+    this.age--;  
+  };  
+  chuck.useTotalGym = function() {  
+    this.strength++;  
+  };  
   return chuck;  
 };  
+
 var newChuck = makeChuckNorris();  
 
 The functional pattern requires that all methods are defined within the maker function. This means that newChuck, and every subsequent object created with this maker function will have the goTanning and useTotalGym methods directly on the object. What's the problem you ask? Surely, this is intuitive, but this pattern violates the DRY (don't repeat yourself) principle by blatantly repeating method definition on each individual object. This issue will be evident as we move forward.  
