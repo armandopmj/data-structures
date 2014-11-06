@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2014-07-data-structures
 =======================
 ###JavaScript Instantiation Patterns
@@ -101,3 +102,7 @@ The implicit 'this binding' causes a great deal of confusion, and for obvious re
 
 
 While serving the same purpose, these four techniques employ different means by which objects obtain their methods. If you would like further clarification, or feel this content could be improved, feel free to reach out!  
+=======
+#data-structures
+This is a project I completed as a student at [Hack Reactor](http://hackreactor.com). This project was worked on with a pair.
+>>>>>>> 33fa3019d839381d2e26fa483be3c9db533fe1f1
